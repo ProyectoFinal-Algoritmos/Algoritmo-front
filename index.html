@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Proyecto TSP</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Proyecto TSP – Visita óptima de puntos</h1>
+
+  <div id="controls">
+    <div class="control-row">
+      <label>Cargar red vial:</label>
+      <input type="file" id="fileNetwork" />
+    </div>
+
+    <div class="control-row">
+      <label>Cargar puntos:</label>
+      <input type="file" id="filePoints" />
+    </div>
+
+    <div class="control-row">
+      <button id="btnRun">Ejecutar algoritmos</button>
+      <button id="btnDownload">Descargar resultados</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <!-- Lógica de la app -->
+  <script src="app.js"></script>
+</body>
+</html>
